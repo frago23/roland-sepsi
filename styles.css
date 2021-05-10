@@ -1,0 +1,78 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+ }
+
+ main {
+      width: 100%;
+      height: auto;
+      background-color: #101314;
+      background-repeat: repeat;
+ }
+
+ section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid yellow;
+      height: 100vh;
+ }
+
+ img {
+      max-width: 500px;
+      max-height: 600px;
+      border-radius: 12px;
+      box-shadow: 10px 10px 59px 0px rgba(0, 0, 0, 0.52);
+      -webkit-box-shadow: 10px 10px 59px 0px rgba(0, 0, 0, 0.52);
+      -moz-box-shadow: 10px 10px 59px 0px rgba(0, 0, 0, 0.52);
+      transition: all ease-in-out .4s;
+ }
+
+ img:hover {
+      transform: scale(1.05);
+ }
+
+ button {
+      position: relative;
+      height: 45px;
+      width: 150px;
+      margin: 10px 7px;
+      padding: 5px 5px;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 2px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      outline: 0;
+      overflow: hidden;
+      background: none;
+      z-index: 1;
+      cursor: pointer;
+      transition: all 0.08s ease-in;
+      -o-transition: all 0.08s ease-in;
+      -ms-transition: all 0.08s ease-in;
+      -moz-transition: all 0.08s ease-in;
+      -webkit-transition: all 0.08s ease-in;
+      animation-name: grow;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+ }
+
+button a {
+     text-decoration: none;
+     color: inherit
+}
+
+ @keyframes grow {
+      0% {
+           transform: scale(.5);
+           opacity: 0;
+      }
+
+      100% {
+           opacity: 1;
+      }
+ }

@@ -1,0 +1,46 @@
+.explore-ytb-ch {
+     font-family: 'Itim', cursive;
+     color: #FFB4A2;
+     font-size: 36px;
+     animation-name: move-in;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+}
+
+.take-me-there {
+     color: #E5989B;
+     border: 2px #E5989B solid;
+}
+
+.fill:hover {
+     color: #17303a;
+}
+
+.fill:before {
+     content: "";
+     position: absolute;
+     background: #E5989B;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 100%;
+     z-index: -1;
+     -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+     top: 0;
+}
+
+.content-container {
+     height: 30vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+}
+
+@keyframes move-in {
+     0% { transform: scale(1.2); }
+}
+
