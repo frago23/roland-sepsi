@@ -1,7 +1,7 @@
 .contact-container {
      font-family: 'Itim', cursive;
-     color: #FFCDB2;
-     background-color: #4b4753;
+     color: var(--c_orangeYellow_light);
+     background-color: var(--c_darkPurple_lighter);
      width: 50%;
      height: 50vh;
      display: flex;

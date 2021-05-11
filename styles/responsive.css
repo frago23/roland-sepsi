@@ -134,3 +134,9 @@
           border-radius: 0 200px 0 0 !important;
      }
 }
+
+@media only screen and (max-height: 720px) {
+     .about-me-container {
+          height: 100vh;
+     }
+}

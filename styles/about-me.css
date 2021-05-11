@@ -1,10 +1,10 @@
 .section-2 {
-     background-color: #FFB4A2;
+     background-color: var(--c_orangeYellow_light);
 }
 
 .hello, .about-me-text {
      font-family: 'Itim', cursive;
-     color: #6D6875;
+     color: var(--c_darkPurple_lighter);
      font-size: 24px;
 }
 
@@ -19,7 +19,7 @@
 
 .hello {
      font-size: 36px;
-     text-shadow: 0px 0px 20px #6D6875;
+     text-shadow: 0px 0px 20px var(--c_darkPurple);
 }
 
 .about-me-text {
@@ -30,24 +30,24 @@
 }
 
 .img-two {
-     box-shadow: 0px 0px 20px 0px #6D6875;
-     -webkit-box-shadow: 0px 0px 20px 0px #6D6875;
-     -moz-box-shadow: 0px 0px 20px 0px #6D6875;
+     box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
+     -webkit-box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
+     -moz-box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
 }
 
 .contact-btn-2 {
-     color: #6D6875;
-     border: 2px #6D6875 solid;
+     color: var(--c_darkPurple);
+     border: 2px var(--c_darkPurple) solid;
 }
 
 .fill-2:hover {
-     color: #FFCDB2;
+     color: var(--c_orangeYellow_light);
 }
 
 .fill-2:before {
      content: "";
      position: absolute;
-     background: #6D6875;
+     background: var(--c_darkPurple);
      bottom: 0;
      left: 0;
      right: 0;

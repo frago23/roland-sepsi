@@ -1,6 +1,6 @@
 .section-1 {
      border-radius: 0 0 500px 0;
-     background-color: #101314;
+     background-color: var(--c_darkPurple);
 }
 
 .section-2 {
@@ -11,13 +11,13 @@
 
 .section-3 {
      border-radius: 0 500px 0 0;
-     background-color: #101314;
+     background-color: var(--c_darkPurple);
 }
 
 .merger {
      width: 50%;
      height: 100vh;
-     background-color: #101314;
+     background-color: var(--c_darkPurple);
      z-index: 1;
      position: absolute;
      top: 100vh;
