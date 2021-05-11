@@ -6,6 +6,7 @@
  
  html {
      scroll-behavior: smooth;
+     overflow: hidden;
  }
  
  header {
@@ -19,13 +20,14 @@
      height: auto;
      background-color: #101314;
      background-repeat: repeat;
+     overflow: hidden;
  }
  
  section {
      display: flex;
      justify-content: space-around;
      align-items: center;
-     border: 1px solid yellow;
+     /* border: 1px solid yellow; */
      height: 100vh;
  }
  
@@ -53,8 +55,12 @@
      transform: scale(1.05);
  }
  
- .icon:hover {
+ .icon-hr:hover {
      transform: rotateZ(10deg) scale(1.2);
+ }
+
+ .icon-hl:hover {
+     transform: rotateZ(-10deg) scale(1.2);
  }
  
  .button-anim {
@@ -119,3 +125,9 @@
      transform: rotateZ(360deg);
 }
 
+hr {
+     border: 0;
+     height: 1px;
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+     margin: 15px;
+}

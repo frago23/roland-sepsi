@@ -1,0 +1,25 @@
+.contact-container {
+     font-family: 'Itim', cursive;
+     color: #FFCDB2;
+     background-color: #4b4753;
+     width: 50%;
+     height: 50vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 30px;
+     align-items: center;
+     border-radius: 20px;
+}
+
+.contact-main {
+     font-size: 40px;
+}
+
+.contact-filler {
+     font-size: 24px;
+}
+
+.contact-info {
+     font-size: 36px;
+}
