@@ -1,0 +1,25 @@
+.section-1 {
+     border-radius: 0 0 500px 0;
+     background-color: #101314;
+}
+
+.section-2 {
+     z-index: 100;
+     border-radius: 500px 0 0 500px;
+     position: relative;
+}
+
+.section-3 {
+     border-radius: 0 500px 0 0;
+     background-color: #101314;
+}
+
+.merger {
+     width: 50%;
+     height: 100vh;
+     background-color: #101314;
+     z-index: 1;
+     position: absolute;
+     top: 100vh;
+     left: 0;
+}
