@@ -1,0 +1,61 @@
+.section-2 {
+     background-color: #FFB4A2;
+}
+
+.hello, .about-me-text {
+     font-family: 'Itim', cursive;
+     color: #6D6875;
+     font-size: 24px;
+}
+
+.about-me-container {
+     width: 50%;
+     height: 60vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.hello {
+     font-size: 36px;
+     text-shadow: 0px 0px 20px #6D6875;
+}
+
+.about-me-text {
+     text-align: justify;
+     text-justify: inter-word;
+     text-indent: 50px;
+     line-height: 40px;
+}
+
+.img-two {
+     box-shadow: 0px 0px 20px 0px #6D6875;
+     -webkit-box-shadow: 0px 0px 20px 0px #6D6875;
+     -moz-box-shadow: 0px 0px 20px 0px #6D6875;
+}
+
+.contact-btn-2 {
+     color: #6D6875;
+     border: 2px #6D6875 solid;
+}
+
+.fill-2:hover {
+     color: #FFCDB2;
+}
+
+.fill-2:before {
+     content: "";
+     position: absolute;
+     background: #6D6875;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 100%;
+     z-index: -1;
+     -webkit-transition: top 0.09s ease-in;
+}
+
+.fill-2:hover:before {
+     top: 0;
+}

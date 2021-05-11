@@ -1,43 +1,54 @@
-const takeMeThereBtn = document.querySelector('#take-me-there');
-// takeMeThereBtn.addEventListener('click', (event) => {
-//     event.preventDefault();
 
-//     window.scrollBy({
-//         top: window.innerHeight,
-//         left: 0,
-//         behavior: 'smooth'
-//     })
-// })
+const sections = {
+     home: {
+          position: 0
+     },
+     about: {
+          position: 1
+     },
+     contact: {
+          position: 2
+     }
+};
+const aboutMeBtn = document.querySelector('#about-me-btn');
+const contactBtn = document.querySelector('#contact-btn');
+const contactBtn_2 = document.querySelector('#contact-btn-2');
+aboutMeBtn.addEventListener('click', (event) => {
+     event.preventDefault();
+ 
+     window.scrollBy({
+         top: window.innerHeight * sections.about.position,
+         left: 0,
+         behavior: 'smooth'
+     })
+ })
+contactBtn.addEventListener('click', (event) => {
+    event.preventDefault();
 
-// hoisting
-function x() {
-    console.log(x);
+    window.scrollBy({
+        top: window.innerHeight * sections.contact.position,
+        left: 0,
+        behavior: 'smooth'
+    })
+})
+contactBtn_2.addEventListener('click', (event) => {
+     event.preventDefault();
+ 
+     window.scrollBy({
+         top: window.innerHeight * sections.contact.position,
+         left: 0,
+         behavior: 'smooth'
+     })
+ })
 
-    var x = 10;
-}
-
-x();
-
-// reference
-const obj1 = { name: 'John' };
-const obj2 = { name: 'John' };
-
-console.log(obj1 == obj2);
-
-// coersion
-const x = 1;
-const y = '1';
-
-console.log(x == y)
-
-// transorm var vs let vs const
-const z = [1, 2, 3];
-z.push(10);
-console.log(z);
-
-// deny hoisting
-console.log(a);
-console.log(b);
-
-var a = 10;
-let b = 20;
+const backToTop = document.querySelector('#back-to-top');
+console.log(backToTop)
+backToTop.addEventListener('click', (event) => {
+     event.preventDefault();
+ 
+     window.scrollBy({
+         top: window.innerHeight * 2 * -1,
+         left: 0,
+         behavior: 'smooth'
+     })
+ })

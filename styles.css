@@ -33,9 +33,6 @@
      max-width: 500px;
      max-height: 600px;
      border-radius: 12px;
-     box-shadow: 10px 10px 59px 0px rgba(229, 152, 155, 0.52);
-     -webkit-box-shadow: 10px 10px 59px 0px rgba(229, 152, 155, 0.52);
-     -moz-box-shadow: 10px 10px 59px 0px rgba(229, 152, 155, 0.52);
      transition: all ease-in-out .4s;
  }
  
@@ -57,10 +54,10 @@
  }
  
  .icon:hover {
-     transform: rotateZ(10deg) scale(1.4);
+     transform: rotateZ(10deg) scale(1.2);
  }
  
- button {
+ .button-anim {
      position: relative;
      height: 45px;
      width: 150px;
@@ -88,7 +85,7 @@
      opacity: 0;
  }
  
- button a {
+ .button-anim a {
      text-decoration: none;
      color: inherit
  }
@@ -102,3 +99,23 @@
          opacity: 1;
      }
  }
+
+.back-to-top-btn {
+     position: fixed;
+     background-color: transparent;
+     border: none;
+     left: 95%;
+     top: 92%;
+     transition: all ease .4s;
+}
+
+.back-to-top-img {
+     width: 50px;
+     height: 50px;
+}
+
+.back-to-top-btn:hover {
+     cursor: pointer;
+     transform: rotateZ(360deg);
+}
+
