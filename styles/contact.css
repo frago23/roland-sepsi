@@ -1,25 +1,25 @@
 .contact-container {
-     font-family: 'Itim', cursive;
-     color: var(--c_orangeYellow_light);
-     background-color: var(--c_darkPurple_lighter);
-     width: 50%;
-     height: 50vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     padding: 30px;
-     align-items: center;
-     border-radius: 20px;
+    font-family: var(--f_mainFontStyle);
+    color: var(--c_orangeYellow_light);
+    background-color: var(--c_darkPurple_lighter);
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    border-radius: 20px;
 }
 
 .contact-main {
-     font-size: 40px;
+    font-size: 40px;
 }
 
 .contact-filler {
-     font-size: 24px;
+    font-size: 24px;
 }
 
 .contact-info {
-     font-size: 36px;
+    font-size: 36px;
 }

@@ -1,61 +1,47 @@
 .section-2 {
-     background-color: var(--c_orangeYellow_light);
+    background-color: var(--c_orangeYellow_light);
 }
 
-.hello, .about-me-text {
-     font-family: 'Itim', cursive;
-     color: var(--c_darkPurple_lighter);
-     font-size: 24px;
+.hello,
+.about-me-text {
+    font-family: var(--f_mainFontStyle);
+    color: var(--c_darkPurple_lighter);
+    font-size: 24px;
 }
 
 .about-me-container {
-     width: 50%;
-     height: 60vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-around;
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .hello {
-     font-size: 36px;
-     text-shadow: 0px 0px 20px var(--c_darkPurple);
+    font-size: 36px;
+    text-shadow: 0px 0px 20px var(--c_darkPurple);
 }
 
 .about-me-text {
-     text-align: justify;
-     text-justify: inter-word;
-     text-indent: 50px;
-     line-height: 40px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    line-height: 40px;
 }
 
 .img-two {
-     box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
-     -webkit-box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
-     -moz-box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
+    box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
+    -webkit-box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
+    -moz-box-shadow: 0px 0px 20px 0px var(--c_darkPurple);
 }
 
 .contact-btn-2 {
-     color: var(--c_darkPurple);
-     border: 2px var(--c_darkPurple) solid;
+    color: var(--c_darkPurple);
+    border: 2px var(--c_darkPurple) solid;
 }
 
 .fill-2:hover {
-     color: var(--c_orangeYellow_light);
-}
-
-.fill-2:before {
-     content: "";
-     position: absolute;
-     background: var(--c_darkPurple);
-     bottom: 0;
-     left: 0;
-     right: 0;
-     top: 100%;
-     z-index: -1;
-     -webkit-transition: top 0.09s ease-in;
-}
-
-.fill-2:hover:before {
-     top: 0;
+    color: var(--c_orangeYellow_light);
+    background-color: var(--c_darkPurple);
 }

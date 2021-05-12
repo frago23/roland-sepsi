@@ -1,8 +1,9 @@
 :root {
-     --c_darkPurple: #5D3C75;
-     --c_darkPurple_lighter: #984169;
-     --c_redOrange: #B34860;
-     --c_redOrange_lighter: #D06966;
-     --c_orangeYellow: #EE9359;
-     --c_orangeYellow_light: #F4AE61;
+    --c_darkPurple: #5D3C75;
+    --c_darkPurple_lighter: #984169;
+    --c_redOrange: #B34860;
+    --c_redOrange_lighter: #D06966;
+    --c_orangeYellow: #EE9359;
+    --c_orangeYellow_light: #F4AE61;
+    --f_mainFontStyle: 'Itim', cursive;
 }
