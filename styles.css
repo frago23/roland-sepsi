@@ -138,3 +138,29 @@
      position: relative;
      z-index: 1000;
  }
+ 
+ footer {
+     background-color: var(--c_darkPurple);
+     font-family: var(--f_mainFontStyle);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: var(--c_redOrange)
+ }
+ 
+ footer p {
+     font-size: 24px;
+ }
+ 
+ .dev-lnkd {
+     margin-left: 10px;
+ }
+ 
+ .dev-lnkd img {
+     height: 15px;
+     width: 15px;
+ }
+ 
+ .dev-lnkd:hover {
+     cursor: pointer;
+ }

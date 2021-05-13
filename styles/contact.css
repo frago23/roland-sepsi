@@ -1,3 +1,9 @@
+.section-3 {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .contact-container {
     font-family: var(--f_mainFontStyle);
     color: var(--c_orangeYellow_light);
