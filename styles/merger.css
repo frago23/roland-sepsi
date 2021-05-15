@@ -1,25 +1,25 @@
 .section-1 {
-     border-radius: 0 0 500px 0;
-     background-color: var(--c_darkPurple);
+    border-radius: 0 0 var(--br_radiusSection) 0;
+    background-color: var(--c_darkPurple);
 }
 
 .section-2 {
-     z-index: 100;
-     border-radius: 500px 0 0 500px;
-     position: relative;
+    z-index: 100;
+    border-radius: var(--br_radiusSection) 0 0 var(--br_radiusSection);
+    position: relative;
 }
 
 .section-3 {
-     border-radius: 0 500px 0 0;
-     background-color: var(--c_darkPurple);
+    border-radius: 0 var(--br_radiusSection) 0 0;
+    background-color: var(--c_darkPurple);
 }
 
 .merger {
-     width: 50%;
-     height: 100vh;
-     background-color: var(--c_darkPurple);
-     z-index: 1;
-     position: absolute;
-     top: 100vh;
-     left: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--c_darkPurple);
+    z-index: 1;
+    position: absolute;
+    top: 100vh;
+    left: 0;
 }

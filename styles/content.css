@@ -1,7 +1,7 @@
 .about-text {
     font-family: var(--f_mainFontStyle);
     color: var(--c_orangeYellow_light);
-    font-size: 24px;
+    font-size: var(--f_fontSizeNormal);
     animation-name: move-in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -17,33 +17,13 @@
     background-color: var(--c_orangeYellow_light);
 }
 
-
-/* .fill:before {
-    content: "";
-    position: absolute;
-    background: var(--c_orangeYellow);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: -1;
-    -webkit-transition: top 0.09s ease-in;
-} */
-
 .about-container {
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid white; */
-    max-width: 50%;
-}
-
-@keyframes move-in {
-    0% {
-        transform: scale(1.2);
-    }
+    max-width: var(--w_defaultMaxWidth);
 }
 
 .icon-container {
@@ -53,7 +33,7 @@
 
 .check-out-container {
     display: flex;
-    width: 50%;
+    width: var(--w_defaultMaxWidth);
     flex-direction: column;
     background-color: var(--c_darkPurple);
     padding: 10px;
@@ -62,25 +42,28 @@
     -webkit-box-shadow: 0px 0px 5px 0px var(--c_orangeYellow_light);
     -moz-box-shadow: 0px 0px 5px 0px var(--c_orangeYellow_light);
     transition: all ease-in-out .2s;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-
-
-/* .check-out-container:hover {
-     box-shadow: 0px 0px 25px 0px rgba(229, 152, 155, 0.52);
-     -webkit-box-shadow: 0px 0px 25px 0px rgba(229, 152, 155, 0.52);
-     -moz-box-shadow: 0px 0px 25px 0px rgba(229, 152, 155, 0.52);
-} */
 
 .check-out-content-text {
     text-align: center;
-    font-size: 24px;
+    font-size: var(--f_fontSizeNormal);
     font-family: var(--f_mainFontStyle);
     color: var(--c_orangeYellow_light);
 }
 
 .and {
     color: var(--c_orangeYellow_light);
-    font-size: 48px;
+    font-size: var(--f_fontSizeNormal);
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .button-container {
@@ -93,4 +76,19 @@
     box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
     -webkit-box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
     -moz-box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
+}
+
+@keyframes move-in {
+    0% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

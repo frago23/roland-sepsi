@@ -11,7 +11,6 @@ const sections = {
 };
 const aboutMeBtn = document.querySelector('#about-me-btn');
 const contactBtn = document.querySelector('#contact-btn');
-const contactBtn_2 = document.querySelector('#contact-btn-2');
 aboutMeBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
@@ -22,15 +21,6 @@ aboutMeBtn.addEventListener('click', (event) => {
     })
 });
 contactBtn.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    window.scrollBy({
-        top: window.innerHeight * sections.contact.position,
-        left: 0,
-        behavior: 'smooth'
-    })
-});
-contactBtn_2.addEventListener('click', (event) => {
     event.preventDefault();
 
     window.scrollBy({
