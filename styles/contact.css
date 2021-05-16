@@ -9,7 +9,7 @@
     color: var(--c_orangeYellow_light);
     background-color: var(--c_darkPurple_lighter);
     max-width: var(--w_defaultMaxWidth);
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -19,7 +19,7 @@
 }
 
 .contact-main {
-    font-size: var(--f_fontSizeHeader);
+    font-size: var(--f_fontSizeNormal);
 }
 
 .contact-filler {

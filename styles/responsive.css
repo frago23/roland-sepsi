@@ -9,6 +9,9 @@
     }
 }
 
+
+/* Small screens, laptops */
+
 @media all and (max-width: 1025px) {
      :root {
         --f_fontSizeNormal: 16px;
@@ -18,6 +21,9 @@
     }
 }
 
+
+/* iPads, Tablets */
+
 @media all and (max-width: 769px) {
     .about-me-text {
         text-indent: 30px;
@@ -26,7 +32,13 @@
     .back-to-top-btn {
         left: 90%;
     }
+}
+
+
+/* Mobile devices */
+
+@media all and (max-width: 480px) {
     .contact-container {
-        height: 70vh;
+        height: 40vh;
     }
 }
