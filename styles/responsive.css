@@ -24,9 +24,6 @@
     .back-to-top-btn {
         left: 90%;
     }
-    main {
-        overflow: scroll;
-    }
 }
 
 @media all and (max-width: 480px) {
