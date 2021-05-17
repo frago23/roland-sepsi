@@ -6,7 +6,6 @@
  
  html {
      scroll-behavior: smooth;
-     overflow: hidden;
  }
  
  header {
@@ -19,7 +18,6 @@
      width: 100%;
      height: auto;
      background-repeat: repeat;
-     overflow: hidden;
      background-color: var(--c_orangeYellow_light);
  }
  
@@ -131,7 +129,8 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     color: var(--c_orangeYellow)
+     color: var(--c_orangeYellow);
+     height: 50px;
  }
  
  .dev-lnkd img {

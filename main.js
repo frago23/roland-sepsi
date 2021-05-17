@@ -14,7 +14,7 @@ const contactBtn = document.querySelector('#contact-btn');
 aboutMeBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
-    window.scrollBy({
+    window.scrollTo({
         top: window.innerHeight * sections.about.position,
         left: 0,
         behavior: 'smooth'
@@ -23,7 +23,7 @@ aboutMeBtn.addEventListener('click', (event) => {
 contactBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
-    window.scrollBy({
+    window.scrollTo({
         top: window.innerHeight * sections.contact.position,
         left: 0,
         behavior: 'smooth'
@@ -34,45 +34,45 @@ const backToTop = document.querySelector('#back-to-top');
 backToTop.addEventListener('click', (event) => {
     event.preventDefault();
 
-    window.scrollBy({
-        top: window.innerHeight * 2 * -1,
+    window.scrollTo({
+        top: 0,
         left: 0,
         behavior: 'smooth'
     });
 });
 
-let canScroll = true;
-document.addEventListener('wheel', (e) => {
-    if (!canScroll)
-        return;
-    if (e.deltaY > 0) {
-        canScroll = false;
-        window.scrollBy({
-            top: window.innerHeight,
-            left: 0,
-            behavior: 'smooth'
-        });
+// let canScroll = true;
+// document.addEventListener('wheel', (e) => {
+//     if (!canScroll)
+//         return;
+//     if (e.deltaY > 0) {
+//         canScroll = false;
+//         window.scrollBy({
+//             top: window.innerHeight,
+//             left: 0,
+//             behavior: 'smooth'
+//         });
 
-        initEnableScroll();
-        return;
-    }
+//         initEnableScroll();
+//         return;
+//     }
 
-    if (e.deltaY < 0) {
-        canScroll = false;
-        window.scrollBy({
-            top: window.innerHeight * -1,
-            left: 0,
-            behavior: 'smooth'
-        });
+//     if (e.deltaY < 0) {
+//         canScroll = false;
+//         window.scrollBy({
+//             top: window.innerHeight * -1,
+//             left: 0,
+//             behavior: 'smooth'
+//         });
 
-        initEnableScroll();
-        return;
-    }
-});
+//         initEnableScroll();
+//         return;
+//     }
+// });
 
-function initEnableScroll() {
-    setTimeout(() => canScroll = true, 800);
-}
+// function initEnableScroll() {
+//     setTimeout(() => canScroll = true, 800);
+// }
 
 const cRightYear = document.querySelector('#copyright_year');
 if (cRightYear) {
