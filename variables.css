@@ -8,7 +8,7 @@
     --f_mainFontStyle: 'Itim', cursive;
     --f_fontSizeNormal: 24px;
     --f_fontSizeHeader: 36px;
-    --i_iconNormal: 36px;
-    --br_radiusSection: 300px;
+    --i_iconNormal: 24px;
+    --br_radiusSection: 500px;
     --w_defaultMaxWidth: 50%;
 }

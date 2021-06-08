@@ -1,0 +1,48 @@
+.hello, .about-me-text {
+     font-family: var(--f_mainFontStyle);
+     color: var(--c_orangeYellow_light);
+     font-size: var(--f_fontSizeNormal)
+}
+
+.about-me-container {
+     opacity: 0;
+     transform: translateX(-50px);
+     max-width: var(--w_defaultMaxWidth);
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     transition: all 2s ease-in;
+}
+
+.hello {
+     font-size: var(--f_fontSizeHeader);
+     text-shadow: 0px 0px 20px var(--c_darkPurple);
+}
+
+.about-me-text {
+     text-align: justify;
+     text-justify: inter-word;
+     text-indent: 50px;
+     line-height: 40px;
+}
+
+.img-two {
+     opacity: 0;
+     transform: translateX(50px);
+     box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
+     -webkit-box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
+     -moz-box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
+     transition: all 2s ease-in;
+}
+
+.contact-btn-2 {
+     color: var(--c_darkPurple);
+     border: 2px var(--c_darkPurple) solid;
+}
+
+.fill-2:hover {
+     color: var(--c_orangeYellow_light);
+     background-color: var(--c_darkPurple);
+}

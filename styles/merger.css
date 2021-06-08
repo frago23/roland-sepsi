@@ -1,25 +1,9 @@
-.section-1 {
-    border-radius: 0 0 var(--br_radiusSection) 0;
-    background-color: var(--c_darkPurple);
-}
-
-.section-2 {
-    z-index: 100;
-    border-radius: var(--br_radiusSection) 0 0 var(--br_radiusSection);
-    position: relative;
-}
-
-.section-3 {
-    border-radius: 0 var(--br_radiusSection) 0 0;
-    background-color: var(--c_darkPurple);
-}
-
 .merger {
     width: 50%;
     height: 100vh;
     background-color: var(--c_darkPurple);
     z-index: 1;
     position: absolute;
-    top: 100vh;
+    top: 200vh;
     left: 0;
 }

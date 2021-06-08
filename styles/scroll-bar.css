@@ -5,12 +5,12 @@
    
 /* Track */
 ::-webkit-scrollbar-track {
-     background: var(--c_darkPurple);
+     background: var(--c_redOrange_lighter);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-     background: var(--c_redOrange_lighter);
+     background: var(--c_orangeYellow_light);
      border-radius: 20px;
 }
 

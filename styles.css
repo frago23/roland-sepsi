@@ -4,31 +4,22 @@
      box-sizing: border-box;
  }
  
- html {
+ html, body {
      scroll-behavior: smooth;
- }
- 
- header {
-     position: fixed;
-     top: 0;
-     left: 0;
+     font-style: 'Itim', cursive;
  }
  
  main {
-      overflow: hidden;
+     overflow: hidden;
      width: 100%;
      height: auto;
      background-repeat: repeat;
-     background-color: var(--c_orangeYellow_light);
  }
  
- section {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     height: 100vh;
+ a {
+      text-decoration: none;
  }
- 
+
  .non-icon {
      max-width: 500px;
      max-height: 600px;
@@ -46,17 +37,17 @@
      cursor: pointer;
  }
  
- .non-icon:hover {
+ /* .non-icon:hover {
      transform: scale(1.05);
  }
  
  .icon-hr:hover {
      transform: rotateZ(10deg);
- }
+ } */
  
- .icon-hl:hover {
+ /* .icon-hl:hover {
      transform: rotateZ(-10deg);
- }
+ } */
  
  .button-anim {
      background: transparent;

@@ -1,33 +1,36 @@
 @media all and (max-width: 1201px) {
-     :root {
-        --br_radiusSection: 100px;
-    }
-    .non-icon {
-        display: none;
-    }
+     .non-icon {
+          display: none;
+     }
+     .header-spacer {
+          display: none;
+     }
 }
 
 @media all and (max-width: 1025px) {
      :root {
-        --f_fontSizeNormal: 16px;
-        --f_fontSizeHeader: 24px;
-        --w_defaultMaxWidth: 70%;
-        --i_iconNormal: 24px;
-    }
+          --f_fontSizeNormal: 16px;
+          --f_fontSizeHeader: 24px;
+          --w_defaultMaxWidth: 70%;
+          --i_iconNormal: 24px;
+     }
 }
 
 @media all and (max-width: 769px) {
-    .about-me-text {
-        text-indent: 30px;
-        line-height: 25px;
-    }
-    .back-to-top-btn {
-        left: 90%;
-    }
+     .about-me-text {
+          text-indent: 30px;
+          line-height: 25px;
+     }
+     .back-to-top-btn {
+          left: 90%;
+     }
 }
 
 @media all and (max-width: 480px) {
-    .contact-container {
-        height: 40vh;
-    }
+     :root {
+          --i_iconNormal: 16px;
+     }
+     .contact-container {
+          height: 40vh;
+     }
 }
