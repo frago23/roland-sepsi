@@ -12,7 +12,6 @@ function handleSection1Observe(entries) {
           return;
 
      const entry = entries[0];
-     console.log(entry);
      if (entry.intersectionRatio > 0) {
           header.classList.remove('header-faded');
           return;
@@ -52,7 +51,6 @@ function handleSection4Ovserve(entries) {
           return;
 
      const entry = entries[0];
-     console.log(entry);
      if (!entry.isIntersecting)
           return;
 
