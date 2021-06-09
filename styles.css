@@ -60,11 +60,6 @@
      -ms-transition: all .2s ease-in;
      -moz-transition: all .2s ease-in;
      -webkit-transition: all .2s ease-in;
-     animation-name: grow;
-     animation-duration: 2s;
-     animation-delay: 1s;
-     animation-fill-mode: forwards;
-     opacity: 0;
  }
  
  .button-anim a {

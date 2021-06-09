@@ -26,9 +26,6 @@ header:hover {
      top: 50%;
      height: 75%;
      transform: translateY(-50%);
-}
-
-header ul {
      list-style: none;
 }
 
@@ -42,6 +39,10 @@ header ul li {
 
 .header-brand {
      flex: 25%;
+}
+
+.header-brand:hover {
+    cursor: pointer;
 }
 
 .header-brand .brand-text {

@@ -30,7 +30,7 @@ contactBtn.addEventListener('click', (event) => {
     })
 });
 
-const backToTop = document.querySelector('#back-to-top');
+const backToTop = document.querySelector('.header-brand');
 backToTop.addEventListener('click', (event) => {
     event.preventDefault();
 
@@ -40,39 +40,6 @@ backToTop.addEventListener('click', (event) => {
         behavior: 'smooth'
     });
 });
-
-// let canScroll = true;
-// document.addEventListener('wheel', (e) => {
-//     if (!canScroll)
-//         return;
-//     if (e.deltaY > 0) {
-//         canScroll = false;
-//         window.scrollBy({
-//             top: window.innerHeight,
-//             left: 0,
-//             behavior: 'smooth'
-//         });
-
-//         initEnableScroll();
-//         return;
-//     }
-
-//     if (e.deltaY < 0) {
-//         canScroll = false;
-//         window.scrollBy({
-//             top: window.innerHeight * -1,
-//             left: 0,
-//             behavior: 'smooth'
-//         });
-
-//         initEnableScroll();
-//         return;
-//     }
-// });
-
-// function initEnableScroll() {
-//     setTimeout(() => canScroll = true, 800);
-// }
 
 const cRightYear = document.querySelector('#copyright_year');
 if (cRightYear) {
