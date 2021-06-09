@@ -11,6 +11,10 @@ header {
      transition: opacity 250ms ease-in-out;
 }
 
+header:hover {
+    opacity: 1;
+}
+
 .header-faded {
      opacity: .2;
 }
