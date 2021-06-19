@@ -20,12 +20,36 @@ function handleSection1Observe(entries) {
         imgOne.classList.toggle('move-in');
         return;
     }
-    
+
     aboutCont.classList.remove('move-in');
     imgOne.classList.remove('move-in');
     header.classList.toggle('header-faded');
 }
 section1Obs.observe(section1);
+//#endregion
+
+//#region section-2
+const section2 = document.querySelector('.section-2');
+const section2Obs = new IntersectionObserver(handleSection2Observer, opt);
+const video1 = document.querySelector('.video1');
+const video2 = document.querySelector('.video2');
+const video3 = document.querySelector('.video3');
+const video4 = document.querySelector('.video4');
+function handleSection2Observer(entires) {
+    if (!entires.length)
+        return;
+
+    const entry = entires[0];
+    if (!entry.isIntersecting)
+        return;
+
+    video1.classList.toggle('move-in');
+    video2.classList.toggle('move-in');
+    video3.classList.toggle('move-in');
+    video4.classList.toggle('move-in');
+    section2Obs.unobserve(entry.target);
+}
+section2Obs.observe(section2);
 //#endregion
 
 //#region section-3
