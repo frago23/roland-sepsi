@@ -1,9 +1,0 @@
-.merger {
-    width: 50%;
-    height: 100vh;
-    background-color: var(--c_darkPurple);
-    z-index: 1;
-    position: absolute;
-    top: 200vh;
-    left: 0;
-}

@@ -1,42 +1,25 @@
-.img-one {
-    opacity: 0;
-    transform: translateX(-150px);
-    box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
-    -webkit-box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
-    -moz-box-shadow: 0px 0px 20px 0px var(--c_orangeYellow_light);
-    transition: all 500ms ease-in;
-}
-
-.about-container {
-    transform: translateX(150px);
-    opacity: 0;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    max-width: var(--w_defaultMaxWidth);
-    transition: all 500ms ease-in;
-}
-
-.about-text {
-    font-family: var(--f_mainFontStyle);
-    color: var(--c_orangeYellow_light);
-    font-size: var(--f_fontSizeNormal);
-}
-
 .take-me-there {
-    color: var(--c_orangeYellow);
-    border: 2px var(--c_orangeYellow) solid;
+    color: black;
+    border: none;
+}
+
+.border-btn {
+    border: 2px black solid;
 }
 
 .fill:hover {
-    color: var(--c_darkPurple);
-    background-color: var(--c_orangeYellow_light);
+    background-color: #f0efeb;
 }
 
 .button-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    width: 100%;
+    height: 300px;
+    margin-right: 50px;
+    font-size: var(--f_fontSizeNormal);
+}
+
+.none {
+     display: none;
 }

@@ -2,8 +2,7 @@
      opacity: 0;
      transform: translateY(-50px);
      font-family: var(--f_mainFontStyle);
-     color: var(--c_orangeYellow_light);
-     background-color: var(--c_darkPurple_lighter);
+     color: black;
      max-width: var(--w_defaultMaxWidth);
      height: 30vh;
      display: flex;
@@ -12,17 +11,9 @@
      padding: 30px;
      align-items: center;
      border-radius: 20px;
-     box-shadow: 0px 4px 5px 0px #000000;
-     -webkit-box-shadow: 0px 4px 5px 0px #000000;
-     -moz-box-shadow: 0px 4px 5px 0px #000000;
-     transition: all 3s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 
-.contact-container:hover {
-     box-shadow: 0px 4px 5px 0px #000000;
-     -webkit-box-shadow: 0px 7px 4px 0px #000000;
-     -moz-box-shadow: 0px 4px 5px 0px #000000;
-}
 
 .contact-main {
      font-size: var(--f_fontSizeNormal);

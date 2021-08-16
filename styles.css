@@ -37,18 +37,6 @@
      cursor: pointer;
  }
  
- /* .non-icon:hover {
-     transform: scale(1.05);
- }
- 
- .icon-hr:hover {
-     transform: rotateZ(10deg);
- } */
- 
- /* .icon-hl:hover {
-     transform: rotateZ(-10deg);
- } */
- 
  .button-anim {
      background: transparent;
      font-family: var(--f_mainFontStyle);
@@ -111,12 +99,12 @@
  }
  
  footer {
-     background-color: var(--c_darkPurple);
+     background-color: var(--background);
      font-family: var(--f_mainFontStyle);
      display: flex;
      justify-content: center;
      align-items: center;
-     color: var(--c_orangeYellow);
+     color: black;
      height: 50px;
  }
  

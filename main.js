@@ -3,10 +3,10 @@ const sections = {
         position: 0
     },
     about: {
-        position: 2 // change to 2
+        position: 1
     },
     contact: {
-        position: 3 // change to 3
+        position: 2
     }
 };
 const aboutMeBtn = document.querySelector('#about-me-btn');
