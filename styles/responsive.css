@@ -1,3 +1,20 @@
+@media all and (max-width: 1283px) {
+     .section-1 {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+          justify-content: space-around !important;
+     }
+
+     .button-container {
+          margin-right: 0;
+          margin-left: 50px;
+     }
+
+     .song-advert-container {
+          margin-left: 50px;
+     }
+}
+
 @media all and (max-width: 1201px) {
      .non-icon {
           display: none;
@@ -16,13 +33,15 @@
      }
      .section-1 {
           background-image: url('/assets/landing-small.png') !important;
-          justify-content: flex-start !important;
-          align-items: flex-end !important;
      }
 
      .button-container {
-          margin-right: 0px;
-          margin-left: 50px;
+          margin-left: 20px;
+     }
+
+     .song-advert-container {
+          margin-left: 20px; 
+          width: 200px;
      }
 }
 
@@ -46,6 +65,10 @@
      }
      .section-1 {
           background-image: url('/assets/landing-small-small.png') !important;
+     }
+     
+     .song-advert-container {
+          width: 100px;
      }
 }
 
