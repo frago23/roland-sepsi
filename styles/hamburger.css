@@ -1,0 +1,28 @@
+.hamburger {
+     display: none;
+     position: relative;
+     flex: 0;
+     margin-left: 10px;
+}
+
+#hamburger-menu {
+     position: fixed;
+     display: none;
+     top: 8%;
+     left: 0;
+     z-index: 2000;
+}
+
+.hamburger-items {
+     display: flex;
+     flex-direction: column;
+     z-index: 100;
+     background-color: white;
+     border-radius: 8px;
+}
+
+.hamburger-items > * {
+     padding: 10px;
+     font-family: 'Josefin Sans', sans-serif;
+     font-weight: bold;
+}

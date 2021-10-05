@@ -12,13 +12,14 @@
      <link rel='stylesheet' href='styles/sections/content.css' />
      <link rel='stylesheet' href='styles/sections/about-me.css' />
      <link rel='stylesheet' href='styles/sections/contact.css' />
-     <link rel='stylesheet' href='styles/sections/videos.css' />
-     <link rel='stylesheet' href='styles/responsive.css' />
+     <link rel='stylesheet' href='styles/sections/new-song.css' />
      <link rel='stylesheet' href='styles/merger.css' />
      <link rel='stylesheet' href='styles/scroll-bar.css' />
      <link rel='stylesheet' href='styles/sections.css' />
      <link rel='stylesheet' href='styles/header.css' />
      <link rel='stylesheet' href='styles/oberserAnimations.css' />
+     <link rel='stylesheet' href='styles/hamburger.css' />
+     <link rel='stylesheet' href='styles/responsive.css' />
 
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,15 +28,37 @@
      <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Allison&family=Dancing+Script:wght@700&display=swap"
           rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
+
 <body>
+     <div id="hamburger-menu">
+          <div class='hamburger-items' class='header-font'>
+               <span id='new-song-btn-h'>New song</span>
+               <span id='about-me-btn-h'>About</span>
+               <span id='contact-btn-h'>Contact</span>
+          </div>
+     </div>
      <header>
-          <ul class='header-ul'>
+          <ul class='header-ul header-font'>
+               <li class='hamburger'>
+                    <a class="icon" onclick="triggerHamburgerMenu()">
+                         <span class="material-icons-outlined">
+                              menu
+                         </span>
+                    </a>
+               </li>
+               <li class='header-buttons'>
+                    <!-- <a>Home</a> -->
+                    <a id='new-song-btn'>New song</a>
+                    <a id='about-me-btn'>About</a>
+                    <a id='contact-btn'>Contact</a>
+               </li>
                <li class='header-brand'>
                     <p class='brand-text'>Roland Sepsi</p>
                </li>
-               <li class='header-spacer'></li>
                <li>
                     <a href='https://www.facebook.com/itsrolandsepsi' target="_blank">
                          <img class='icon icon-hr' src='assets/facebook.png' />
@@ -65,70 +88,60 @@
                </li>
           </ul>
      </header>
-
      <main>
           <section class='section section-1'>
-               <div class='button-container'>
-                    <button class='fill take-me-there button-anim border-btn'>
-                         <a href='https://www.youtube.com/channel/UCTKSNMayLkW1YYEWEU_hSRQ' target="_blank">
-                              Go to Youtube
-                         </a>
-                    </button>
-                    <button class='fill take-me-there button-anim' id='about-me-btn'>
-                         <a href='#' target="_blank">
-                              Get to know me
-                         </a>
-                    </button>
-                    <button class='fill take-me-there button-anim' id='contact-btn'>
-                         <a href='#' target="_blank">
-                              Get in touch
-                         </a>
-                    </button>
+               <div class='subscribe-container'>
+                    <a href="https://www.youtube.com/c/RolandSepsi?sub_confirmation=1" target="_blank">
+                         <img src='assets/subscribe.png' class='subscribe' />
+                    </a>
                </div>
                <div class="song-advert-container">
                     <a class='advert' href='https://ampl.ink/lovesummer' target="_blank">
-                         'Love, Summer' OUT NOW!
+                         'Love, Summer' 🌄 OUT NOW!
                     </a>
                </div>
           </section>
-          <!-- <section class='section section-2'>
-            <div class='videos-container'>
-                <div class='videos-inner videos-inner1'>
-                    <iframe src="https://www.youtube.com/embed/hg51TgKQ62c"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class='video1'></iframe>
-                    <iframe src="https://www.youtube.com/embed/DVBrWqDS5hQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class='video2'></iframe>
-                </div>
-                <div class='videos-inner videos-inner2'>
-                    <iframe src="https://www.youtube.com/embed/rfOzNCFSCUE"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                        class='video3'></iframe>
-                    <iframe src="https://www.youtube.com/embed/AAvtXCWhqGw"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class='video4'></iframe>
-                </div>
-            </div>
-        </section> -->
+          <section class='section section-2'>
+               <p class='about-me-text song-description'>
+                    Roland’s new song ‘Love, Summer’ is a goodbye letter from summer. The song is reminding the listener
+                    about the good memories with friends, family and special person that you’ve made together. Summer is
+                    a freeing season, where you have the feeling and the possibility to do anything. Travel. Love. Enjoy
+                    the sunshine. That’s what it is about.
+                    <br>
+                    <br>
+                    ‘Love, Summer’ was written with a nostalgic feeling, and pictures, memories showing up in his mind’s
+                    vision.
+               </p>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/CqW_iauwjB0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </section>
           <section class='section section-3'>
+               <img src='assets/3.jpg' class='non-icon img-two' />
                <div class='about-me-container'>
                     <p class='about-me-text'>
-                         My name is Roland Sepsi, 22-years-old, and I am a musician from Cluj-Napoca, Romania. It's
-                         weird to say I am from Romania, while my nationality is Hungarian. Since I was a little kid I
-                         loved music and dancing. In my late teens, I started writing music,
-                         I don't know in which genre I should affiliate them, but mainly, I would say pop. My greatest
-                         inspiration is my life, followed by Mariah Carey. I am very happy to share my original music
-                         and covers with you and I hope that you enjoy
-                         listening to them as much as I enjoy making them.
+                         Roland Sepsi is a Transylvanian singer-songwriter based in Cluj-Napoca. Creating pop sounding
+                         songs, with some very famous inspirations like Mariah Carey, Katy Perry, Dua Lipa. His greatest
+                         passion, music, helps him express his experiences through the power of sound and melody.
+                         Sometimes a specific circumstance is masked with something totally irrelevant to the topic he
+                         is writing about.
+                         <br>
+                         <br>
+                         Creative. A word that also includes the meaning of unusual. Roland is not a usual person, a
+                         usual artist. He sees the great in small things, and the ways you can use anything in this
+                         world to create art.
+                         <br>
+                         <br>
+                         Roland studied at a local Hungarian school, and graduated. During his high school years, he
+                         started to work on his passion more seriously. Gradually he took on more, and more in regards
+                         to arts – information, skills, experiences and work.
+                         <br>
+                         <br>
+                         The goal that he has set is to inspire through his music.
+
                     </p>
                </div>
-               <img src='assets/2.jpg' class='non-icon img-two' />
           </section>
           <section class='section section-4'>
                <div class='contact-container'>
@@ -137,7 +150,7 @@
                          Feel free to contact me anytime at:
                     </p>
                     <p class='contact-info mail'>
-                         <strong><i>rolandsepsi@gmail.com</i></strong>
+                         <strong><i>contact@itsrolandsepsi.com</i></strong>
                     </p>
                </div>
           </section>
@@ -152,6 +165,7 @@
           </small>
      </footer>
 
+     <script src='scripts/hamburger.js'></script>
      <script src='main.js'></script>
      <script src='scripts/observers.js'></script>
 </body>

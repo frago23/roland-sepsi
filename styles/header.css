@@ -22,7 +22,8 @@ header:hover {
 .header-ul {
      position: relative;
      display: flex;
-     justify-content: space-around;
+     justify-content: space-center;
+     align-items: center;
      top: 50%;
      height: 75%;
      transform: translateY(-50%);
@@ -37,16 +38,11 @@ header ul li {
      justify-content: space-around;
 }
 
-.header-brand {
-     flex: 25%;
-}
-
 .header-brand:hover {
     cursor: pointer;
 }
 
 .header-brand .brand-text {
-     font-family: 'Dancing Script', cursive;
      font-size: var(--f_fontSizeHeader);
      font-weight: bold;
 }
@@ -58,4 +54,16 @@ header ul li {
 .logo {
      width: 100px;
      height: 100px;
+}
+
+.header-buttons a {
+     font-weight: bold;
+}
+
+.header-buttons a:hover {
+     cursor: pointer;
+}
+
+.header-font {
+     font-family: 'Josefin Sans', sans-serif;
 }

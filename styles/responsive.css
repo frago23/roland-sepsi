@@ -1,11 +1,18 @@
 @media all and (max-width: 1283px) {
+     :root {
+          --f_fontSizeNormal: 20px;
+          --f_fontSizeHeader: 26px;
+          --w_defaultMaxWidth: 100%;
+          --i_iconNormal: 24px;
+     }
+
      .section-1 {
           flex-direction: column-reverse;
           align-items: flex-start;
           justify-content: space-around !important;
      }
 
-     .button-container {
+     .subscribe-container {
           margin-right: 0;
           margin-left: 50px;
      }
@@ -13,12 +20,37 @@
      .song-advert-container {
           margin-left: 50px;
      }
+
+     section {
+          -webkit-box-shadow: none !important; 
+          box-shadow: none !important;
+          margin: 0 !important;
+          border-radius: 0 !important;
+          padding: 100px !important;
+     }
+
+     .section-2, .section-3 {
+          align-items: center;
+          flex-direction: column;
+     }
+
+     .section-3 {
+          flex-direction: column-reverse;
+     }
+
+     .non-icon {
+          max-width: 300px;
+          max-height: 400px;
+          margin: 20px;
+      }
+      
+     .about-me-text {
+          line-height: 20px;
+          width: 500px;
+     }
 }
 
 @media all and (max-width: 1201px) {
-     .non-icon {
-          display: none;
-     }
      .header-spacer {
           display: none;
      }
@@ -28,19 +60,19 @@
      :root {
           --f_fontSizeNormal: 16px;
           --f_fontSizeHeader: 24px;
-          --w_defaultMaxWidth: 70%;
+          --w_defaultMaxWidth: 90%;
           --i_iconNormal: 24px;
      }
      .section-1 {
           background-image: url('/assets/landing-small.png') !important;
      }
 
-     .button-container {
-          margin-left: 20px;
+     .subscribe-container {
+          margin-left: -80px;
      }
 
      .song-advert-container {
-          margin-left: 20px; 
+          margin-left: -80px; 
           width: 200px;
      }
 }
@@ -49,10 +81,6 @@
      :root {
           --iframe_width: 200px;
           --iframe_height: 100px;
-     }
-     .about-me-text {
-          text-indent: 30px;
-          line-height: 25px;
      }
      .back-to-top-btn {
           left: 90%;
@@ -70,10 +98,31 @@
      .song-advert-container {
           width: 100px;
      }
+
+     .about-me-text {
+          line-height: 20px;
+          width: 300px;
+     }
+
+     iframe {
+          margin: 20px;
+          width: 300px ;
+          height: 515px;
+     }
+
+     .header-buttons {
+          display: none;
+     }
+
+     .hamburger {
+          display: block;
+     }
 }
 
 @media all and (max-width: 480px) {
      :root {
+          --f_fontSizeNormal: 12px;
+          --f_fontSizeHeader: 16px;
           --i_iconNormal: 16px;
      }
      .contact-container {
