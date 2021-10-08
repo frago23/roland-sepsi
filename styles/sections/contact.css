@@ -26,3 +26,14 @@
 .contact-info {
      font-size: var(--f_fontSizeNormal);
 }
+
+#mc_embed_signup {
+     background: #fff;
+     clear: left;
+     border-radius: 12px;
+     font-family: var(--f_mainFontStyle);
+}
+
+#mc-embedded-subscribe {
+     background-color: rgb(214, 45, 15) !important;
+}

@@ -23,4 +23,7 @@
  .section-3 {
  }
 
- .section-4 {}
+ .section-4 {
+      flex-direction: column;
+      justify-content: space-evenly;
+ }
