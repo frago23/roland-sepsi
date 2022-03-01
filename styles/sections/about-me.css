@@ -1,7 +1,7 @@
 .hello, .about-me-text {
      font-family: var(--f_mainFontStyle);
      color: black;
-     font-size: var(--f_fontSizeNormal)
+     font-size: var(--f_fontSizeSmall)
 }
 
 .about-me-container {

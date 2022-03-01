@@ -1,20 +1,22 @@
 @media all and (max-width: 1283px) {
      :root {
           --f_fontSizeNormal: 20px;
+		  --f_fontSizeSmall: 12px;
           --f_fontSizeHeader: 26px;
           --w_defaultMaxWidth: 100%;
           --i_iconNormal: 24px;
+		  --i_iconBig: 24px;
      }
 
      .section-1 {
           flex-direction: column-reverse;
-          align-items: flex-start;
+          align-items: flex-end;
           justify-content: space-around !important;
+		  background-image: url('/assets/landing-2-small.png') !important;
      }
 
      .subscribe-container {
-          margin-right: 0;
-          margin-left: 50px;
+          margin-left: 0;
      }
 
      .song-advert-container {
@@ -26,7 +28,7 @@
           box-shadow: none !important;
           margin: 0 !important;
           border-radius: 0 !important;
-          padding: 100px !important;
+          /* padding: 100px !important; */
      }
 
      .section-2, .section-3 {
@@ -48,6 +50,14 @@
           line-height: 20px;
           width: 500px;
      }
+
+	 .music-platforms li {
+		 margin: 5px;
+	 }
+
+	 .song-description {
+		 margin: 5px;
+	 }
 }
 
 @media all and (max-width: 1201px) {
@@ -63,12 +73,9 @@
           --w_defaultMaxWidth: 90%;
           --i_iconNormal: 24px;
      }
-     .section-1 {
-          background-image: url('/assets/landing-small.png') !important;
-     }
 
      .subscribe-container {
-          margin-left: -80px;
+		margin-top: 600px;
      }
 
      .song-advert-container {
@@ -92,7 +99,7 @@
           margin: 2px;
      }
      .section-1 {
-          background-image: url('/assets/landing-small-small.png') !important;
+          background-image: url('/assets/landing-2-small-small.png') !important;
      }
      
      .song-advert-container {

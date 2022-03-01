@@ -1,0 +1,30 @@
+.song-description {
+	max-width: 500px;
+	margin: 15px;
+	font-size: var(--f_fontSizeSmall);
+}
+
+.icon-big {
+	transition: all ease-in-out 0.3s;
+	height: var(--i_iconBig);
+	width: var(--i_iconBig);
+}
+
+.music-platforms ul {
+	list-style: none;
+}
+
+.music-platforms li {
+	margin: 20px;
+	cursor: pointer;
+}
+
+.music-platforms a {
+	display: flex;
+	align-items: center;
+}
+
+.music-platforms span {
+	margin-left: 10px;
+	font-size: var(--f_fontSizeSmall);
+}

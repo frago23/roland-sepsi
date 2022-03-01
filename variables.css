@@ -7,8 +7,10 @@
     --c_orangeYellow_light: #F4AE61;
     --f_mainFontStyle: 'Itim', cursive;
     --f_fontSizeNormal: 24px;
+	--f_fontSizeSmall: 16px;
     --f_fontSizeHeader: 36px;
     --i_iconNormal: 24px;
+	--i_iconBig: 36px;
     --br_radiusSection: 500px;
     --w_defaultMaxWidth: 50%;
     --iframe_width: 400px;
