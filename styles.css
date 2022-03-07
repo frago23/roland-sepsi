@@ -1,120 +1,121 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
- 
- html, body {
-     scroll-behavior: smooth;
-     font-style: 'Itim', cursive;
- }
- 
- main {
-     overflow: hidden;
-     width: 100%;
-     height: auto;
-     background-repeat: repeat;
- }
- 
- a {
-      text-decoration: none;
- }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
- .non-icon {
-     max-width: 500px;
-     max-height: 600px;
-     border-radius: 12px;
-     transition: all ease-in-out .4s;
- }
- 
- .icon {
-     transition: all ease-in-out .3s;
-     height: var(--i_iconNormal);
-     width: var(--i_iconNormal);
- }
- 
- .icon:hover {
-     cursor: pointer;
- }
- 
- .button-anim {
-     background: transparent;
-     font-family: var(--f_mainFontStyle);
-     font-size: var(--f_fontSizeNormal);
-     padding: 5px;
-     border-radius: 12px;
-     transition: all 0.08s ease-in;
-     -o-transition: all .2s ease-in;
-     -ms-transition: all .2s ease-in;
-     -moz-transition: all .2s ease-in;
-     -webkit-transition: all .2s ease-in;
- }
- 
+html,
+body {
+	scroll-behavior: smooth;
+	font-family: var(--f_mainFontStyle);
+}
+
+main {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	background-repeat: repeat;
+}
+
 a {
-     text-decoration: none;
-     color: inherit
- }
- 
- @keyframes grow {
-     0% {
-         transform: scale(.5);
-         opacity: 0;
-     }
-     100% {
-         opacity: 1;
-     }
- }
- 
- .back-to-top-btn {
-     position: fixed;
-     background-color: transparent;
-     border: none;
-     left: 95%;
-     top: 92%;
-     transition: all ease .4s;
-     z-index: 150;
- }
- 
- .back-to-top-img {
-     width: var(--i_iconNormal);
-     height: var(--i_iconNormal);
-     z-index: 150;
- }
- 
- .back-to-top-btn:hover {
-     cursor: pointer;
-     transform: rotateZ(360deg);
- }
- 
- hr {
-     border: 0;
-     height: 1px;
-     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-     margin: 15px;
- }
- 
- nav {
-     position: relative;
-     z-index: 1000;
- }
- 
- footer {
-     background-color: var(--background);
-     font-family: var(--f_mainFontStyle);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: black;
-     height: 50px;
- }
- 
- .dev-lnkd img {
-     height: 14px;
-     width: 14px;
-     vertical-align: middle;
-     margin-left: 5px;
- }
- 
- .dev-lnkd:hover {
-     cursor: pointer;
- }
+	text-decoration: none;
+}
+
+.non-icon {
+	max-width: 500px;
+	max-height: 600px;
+	border-radius: 12px;
+	transition: all ease-in-out 0.4s;
+}
+
+.icon {
+	transition: all ease-in-out 0.3s;
+	height: var(--i_iconNormal);
+	width: var(--i_iconNormal);
+}
+
+.icon:hover {
+	cursor: pointer;
+}
+
+.button-anim {
+	background: transparent;
+	font-family: var(--f_mainFontStyle);
+	font-size: var(--f_fontSizeNormal);
+	padding: 5px;
+	border-radius: 12px;
+	transition: all 0.08s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@keyframes grow {
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.back-to-top-btn {
+	position: fixed;
+	background-color: transparent;
+	border: none;
+	left: 95%;
+	top: 92%;
+	transition: all ease 0.4s;
+	z-index: 150;
+}
+
+.back-to-top-img {
+	width: var(--i_iconNormal);
+	height: var(--i_iconNormal);
+	z-index: 150;
+}
+
+.back-to-top-btn:hover {
+	cursor: pointer;
+	transform: rotateZ(360deg);
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	margin: 15px;
+}
+
+nav {
+	position: relative;
+	z-index: 1000;
+}
+
+footer {
+	background-color: var(--background);
+	font-family: var(--f_mainFontStyle);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	height: 50px;
+}
+
+.dev-lnkd img {
+	height: 14px;
+	width: 14px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.dev-lnkd:hover {
+	cursor: pointer;
+}
