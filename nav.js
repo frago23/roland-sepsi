@@ -46,10 +46,11 @@ function injectNav(activePage) {
     </div>
   </div>`;
 
+  const year = new Date().getFullYear();
   const footer = `
   <footer>
     <span class="footer-logo">Queen Empress Roland</span>
-    <span class="footer-copy">© 2025 Roland Music. All rights reserved.</span>
+    <span class="footer-copy">© ${year} Roland Music. All rights reserved.</span>
   </footer>`;
 
   document.body.insertAdjacentHTML('afterbegin', nav);
