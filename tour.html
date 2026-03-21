@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour — Queen Empress Roland</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .tour-section {
+      position: relative;
+      z-index: 1;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 4rem;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .tour-crown {
+      font-size: 4rem;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .tour-coming {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--dark);
+      line-height: 1.2;
+    }
+
+    .tour-coming em { color: var(--emerald); }
+
+    .tour-sub {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      max-width: 480px;
+    }
+
+    .tour-notify {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tour-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto;
+    }
+
+    /*
+      ════════════════════════════════════
+      WHEN YOU HAVE TOUR DATES:
+      Replace the .tour-section content with
+      a .tour-list of .tour-date rows like:
+
+      <div class="tour-date">
+        <div class="tour-date-info">
+          <p class="tour-date-day">15 March 2026</p>
+          <p class="tour-date-city">Stockholm, Sweden</p>
+          <p class="tour-date-venue">Debaser Strand</p>
+        </div>
+        <a href="TICKET_URL" target="_blank" class="btn-primary">Tickets</a>
+      </div>
+
+      And add this CSS:
+      .tour-list { padding: 5rem 4rem; max-width: 900px; margin: 0 auto; }
+      .tour-date { display:flex; justify-content:space-between; align-items:center;
+                   padding: 2rem 0; border-bottom: 1px solid var(--border); gap:2rem; flex-wrap:wrap; }
+      .tour-date-day { font-family:'Cinzel',serif; font-size:0.72rem; letter-spacing:0.2em; color:var(--gold); }
+      .tour-date-city { font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:300; font-style:italic; color:var(--dark); }
+      .tour-date-venue { font-size:0.85rem; color:var(--text-light); }
+      ════════════════════════════════════
+    */
+
+    @media (max-width: 768px) {
+      .tour-section { padding: 4rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-hero tour">
+    <p class="page-eyebrow">Live</p>
+    <h1 class="page-title">On <em>Tour</em></h1>
+  </div>
+
+  <section class="tour-section">
+    <div class="tour-crown reveal">👑</div>
+    <div class="tour-divider reveal"></div>
+    <h2 class="tour-coming reveal">Dates <em>coming soon</em></h2>
+    <p class="tour-sub reveal">World domination is in the works. Tour dates will be announced here — follow on socials to be the first to know.</p>
+    <div class="tour-notify reveal">
+      <a href="https://www.instagram.com/queenempressroland/" target="_blank" class="btn-primary">Follow on Instagram</a>
+      <a href="https://www.facebook.com/queenempressroland" target="_blank" class="btn-outline">Follow on Facebook</a>
+    </div>
+  </section>
+
+  <div id="socials-placeholder"></div>
+  <div id="footer-placeholder"></div>
+
+  <script src="nav.js"></script>
+  <script>injectNav('tour');</script>
+</body>
+</html>

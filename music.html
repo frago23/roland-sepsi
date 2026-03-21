@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music — Queen Empress Roland</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .music-grid {
+      position: relative;
+      z-index: 1;
+      padding: 5rem 4rem;
+      background: var(--cream);
+    }
+
+    /* ── RELEASE CARD ── */
+    .release {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 3.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .release:last-child { border-bottom: none; }
+
+    .release-artwork {
+      aspect-ratio: 1;
+      background: linear-gradient(135deg, var(--emerald) 0%, #1a5e35 50%, #0d3d22 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .release-artwork::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 30%, rgba(201,168,76,0.25) 0%, transparent 60%);
+    }
+
+    /*
+      ════════════════════════════════════
+      TO ADD ARTWORK IMAGES:
+      Replace the emoji inside .release-artwork with:
+      <img src="assets/SONG-NAME.jpg" alt="Cover art"
+           style="width:100%;height:100%;object-fit:cover;display:block;"/>
+      ════════════════════════════════════
+    */
+
+    .release-type {
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .release-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--dark);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    .release-year {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+    }
+
+    .release-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .release-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.3rem;
+      border: 1px solid var(--border);
+      background: var(--white);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-family: 'Jost', sans-serif;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+      white-space: nowrap;
+    }
+
+    .release-btn:hover { background: var(--emerald); color: var(--white); border-color: var(--emerald); }
+    .release-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+    .release-btn.primary {
+      background: var(--emerald);
+      color: var(--white);
+      border-color: var(--emerald);
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .release-btn.primary:hover { background: transparent; color: var(--emerald); }
+
+    /* EP special styling */
+    .release.ep .release-artwork {
+      background: linear-gradient(135deg, #1a3a2a 0%, var(--emerald) 50%, var(--gold) 100%);
+    }
+
+    .release.ep .release-title {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+    }
+
+    @media (max-width: 768px) {
+      .music-grid { padding: 3rem 1.5rem; }
+      .release {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2.5rem 0;
+      }
+      .release-artwork { max-width: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-hero music">
+    <p class="page-eyebrow">Discography</p>
+    <h1 class="page-title">The <em>Music</em></h1>
+  </div>
+
+  <section class="music-grid">
+
+    <!-- Roland Sepsi EP — 2023 -->
+    <div class="release ep reveal">
+      <div class="release-artwork"><img src="assets/roland-sepsi.png" alt="Roland Sepsi EP" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:block;"/></div>
+      <div class="release-info">
+        <p class="release-type">EP</p>
+        <h2 class="release-title">Roland Sepsi</h2>
+        <p class="release-year">2023</p>
+        <div class="release-links">
+          <a href="https://share.amuse.io/album/queen-empress-roland-roland-sepsi-1" target="_blank" class="release-btn primary">
+            Listen Now
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Misty Island — 2022 -->
+    <div class="release reveal">
+      <div class="release-artwork"><img src="assets/misty-island.png" alt="Misty Island" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:block;"/></div>
+      <div class="release-info">
+        <p class="release-type">Single</p>
+        <h2 class="release-title">Misty Island</h2>
+        <p class="release-year">2022</p>
+        <div class="release-links">
+          <a href="https://artist.amuse.io/studio/collection/4027264" target="_blank" class="release-btn primary">
+            Listen Now
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Love, Summer — 2021 -->
+    <div class="release reveal">
+      <div class="release-artwork"><img src="assets/love-summer.png" alt="Love, Summer" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:block;"/></div>
+      <div class="release-info">
+        <p class="release-type">Single</p>
+        <h2 class="release-title">Love, Summer</h2>
+        <p class="release-year">2021</p>
+        <div class="release-links">
+          <a href="https://share.amuse.io/track/queen-empress-roland-love-summer" target="_blank" class="release-btn primary">
+            Listen Now
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- I Have My Bikini On — 2020 -->
+    <div class="release reveal">
+      <div class="release-artwork"><img src="assets/bikini.jpg" alt="I Have My Bikini On" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:block;"/></div>
+      <div class="release-info">
+        <p class="release-type">Single</p>
+        <h2 class="release-title">I Have My Bikini On</h2>
+        <p class="release-year">2020</p>
+        <div class="release-links">
+          <a href="https://share.amuse.io/track/queen-empress-roland-i-have-my-bikini-on" target="_blank" class="release-btn primary">
+            Listen Now
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div id="socials-placeholder"></div>
+  <div id="footer-placeholder"></div>
+
+  <script src="nav.js"></script>
+  <script>injectNav('music');</script>
+</body>
+</html>

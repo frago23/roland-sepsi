@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Queen Empress Roland</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .about-section {
+      position: relative;
+      z-index: 1;
+      padding: 5rem 4rem;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    /* ── PHOTO ── */
+    .about-photo-wrap { position: sticky; top: 7rem; }
+
+    .about-frame {
+      aspect-ratio: 3/4;
+      background: linear-gradient(160deg, var(--emerald-pale) 0%, var(--emerald-mid) 60%, var(--emerald) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: clamp(4rem, 8vw, 6rem);
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    /*
+      ════════════════════════════════════
+      TO ADD YOUR PHOTO:
+      Replace the 👑 emoji inside .about-frame with:
+
+      <img src="assets/photo-about.jpg"
+           alt="Queen Empress Roland"
+           style="width:100%;height:100%;object-fit:cover;
+                  object-position:center top;
+                  position:absolute;inset:0;" />
+      ════════════════════════════════════
+    */
+
+    .about-frame::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border: 1px solid var(--emerald-mid);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .about-frame-accent {
+      position: absolute;
+      top: -1.5rem; right: -1.5rem;
+      width: 80px; height: 80px;
+      border-top: 1px solid var(--gold);
+      border-right: 1px solid var(--gold);
+    }
+
+    /* ── CONTENT ── */
+    .about-content { display: flex; flex-direction: column; gap: 0; }
+
+    .about-text {
+      font-size: 0.95rem;
+      line-height: 1.9;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--emerald);
+      border-left: 2px solid var(--gold);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      line-height: 1.5;
+    }
+
+    /* ── FACTS ── */
+    .about-facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .fact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .fact-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .fact-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--dark);
+    }
+
+    @media (max-width: 768px) {
+      .about-section { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
+      .about-photo-wrap { position: static; }
+      .about-frame { aspect-ratio: 4/3; max-height: 280px; }
+      .about-frame-accent { display: none; }
+      .about-facts { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-hero about">
+    <p class="page-eyebrow">The Story</p>
+    <h1 class="page-title">About <em>Roland</em></h1>
+  </div>
+
+  <section class="about-section">
+
+    <div class="about-photo-wrap reveal">
+      <div class="about-frame">
+        <!-- Replace 👑 with your photo — see instructions in CSS above -->
+        <img src="assets/profile-2.JPG"
+           alt="Queen Empress Roland"
+           style="width:100%;height:100%;object-fit:cover;
+                  object-position:center top;
+                  position:absolute;inset:0;" />
+      </div>
+      <div class="about-frame-accent"></div>
+    </div>
+
+    <div class="about-content">
+      <div class="divider reveal">
+        <div class="divider-line"></div>
+        <span class="divider-gem">✦</span>
+        <div class="divider-line"></div>
+      </div>
+
+      <p class="about-text reveal">A spiritual, empathic, and bad bitch all in one, Queen Empress Roland blends elegance with slay to create a musical experience like no other. Inspired by a deep fascination with royal history, the name represents the freedom to be whoever you want to be — even a Queen and an Empress at the same time.</p>
+
+      <blockquote class="about-quote reveal">
+        "Through music, I hope to inspire others to embrace their own path, take things step by step, and never compare themselves to anyone else."
+      </blockquote>
+
+      <p class="about-text reveal">Having started music in 2015, Queen Empress Roland has developed a sound that is as flamboyant, wacky, and unpredictable as their personality. The music swings between high-energy party anthems, deeply emotional ballads, and dreamy storytelling — all tied together by thoughtful lyrics and personal reflections.</p>
+
+      <p class="about-text reveal">On stage, Roland is a magnet of energy and charisma. Whether leading the crowd into a euphoric dance or delivering raw, emotional performances — the goal is always the same: to make people feel at ease, fully engaged, and swept away by the moment.</p>
+
+      <p class="about-text reveal">As for the future? Sharing my art and connect with people, of course. With dreams of collaborating with Dua Lipa on a massive party anthem and getting sung off the track by Mariah Carey, Roland is set on making waves in the music industry. The ultimate goal? Headlining major festivals and owning the stage like the true royalty they are.</p>
+
+      <div class="about-facts reveal">
+        <div class="fact">
+          <span class="fact-label">Started</span>
+          <span class="fact-value">2015</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Based in</span>
+          <span class="fact-value">Sweden</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Releases</span>
+          <span class="fact-value">3 Singles + 1 EP</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div id="socials-placeholder"></div>
+  <div id="footer-placeholder"></div>
+
+  <script src="nav.js"></script>
+  <script>injectNav('about');</script>
+</body>
+</html>
